@@ -158,7 +158,7 @@ def "メタクラスを操作する"() {
 
 スペッククラスに`@ConfineMetaClassChanges`を付与すると、`setupSpec`メソッドの前の`metaClass`状態に`cleanupSpec`メソッドの後でリストアされる。
 
-```
+```groovy
 // このスペッククラス内でのStringに対するmetaClassの操作は
 // このスペックが終了するときにロールバックされる
 @ConfineMetaClassChanges(String)

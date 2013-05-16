@@ -12,13 +12,13 @@ Spockのモックサポート
 
 `MockingApi#Mock`メソッドで生成する。
 
-```
+```groovy
 def subscriber = Mock(Subscriber)
 ```
 
 左辺で型指定してもよい。
 
-```
+```groovy
 Subscriber subscriber = Mock()
 ```
 
@@ -27,7 +27,7 @@ Subscriber subscriber = Mock()
 
 モッキングとはインタラクションを宣言する活動のこと。
 
-```
+```groovy
 def "subscriberでメッセージが受信されるべき"() {
     when:
     publisher.send("hello")
@@ -226,7 +226,7 @@ then:
 
 コンディションのグループ化と同様に、インタラクションも`with`でグループ化できる。
 
-```
+```groovy
 with(subscriber) {
     1 * receive("hello")
     1 * receive("goodbye")
@@ -258,7 +258,7 @@ subscriber.receive(_) >> "ok"
 
 固定値を返すには`>>`を使用する。
 
-```
+```groovy
 subscriber.receive(_) >> "ok"
 ```
 
@@ -348,7 +348,7 @@ def subscriber = Spy(SubscriberImpl) // コンストラクタの引数を省略�
 
 本物メソッドに対するモッキングが可能。
 
-```
+```groovy
 1 * subscriber.receive(_)
 ```
 

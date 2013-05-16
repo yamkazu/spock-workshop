@@ -262,7 +262,7 @@ class MyIterable implements Iterable {
 
 外部リソースをデータプロバイダにする。
 
-```
+```groovy
 def "データベースから読み込む"() {
     expect:
     Math.max(x, y) == z
@@ -278,7 +278,7 @@ def "データベースから読み込む"() {
 
 複数のデータ変数へ接続するさいに、いらない値は`_`で捨てる。
 
-```
+```groovy
 [x, _, z] << sql.rows("SELECT a, b, c FROM maxdata")
 ```
 
@@ -320,7 +320,7 @@ def "組み合わせて使用する"() {
 
 ### プレースホルダとして代入を活用する
 
-```
+```groovy
 @Unroll
 def "#age 才は #adultLabel"() {
     expect:

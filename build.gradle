@@ -7,11 +7,22 @@ repositories {
 }
 
 dependencies {
-    groovy 'org.codehaus.groovy:groovy-all:2.1.3'
+    compile 'org.codehaus.groovy:groovy-all:2.1.3'
+
+    // Groovyのバージョンにより使用するアーティファクトが異なる
+    // 参考: https://code.google.com/p/spock/wiki/SpockVersionsAndDependencies
     testCompile 'org.spockframework:spock-core:0.7-groovy-2.0'
+
+    // モック機能を使う場合(正確にはクラスをモックする場合)は
+    // cglib-nodep-2.2以上、objenesis-1.2以上が必要
+    testCompile 'cglib:cglib-nodep:2.2'
+    testCompile 'org.objenesis:objenesis:1.2'
+
+    // その他テスト用
+    testCompile 'com.h2database:h2:1.3.171'
 }
 
-task makeDirs(description:'make all dirs for project setup') << {
+task makeDirs(description: 'make all dirs for project setup') << {
     def sources = [sourceSets.main, sourceSets.test]
     sources*.allSource*.srcDirs.flatten().each { File srcDir ->
         println "making $srcDir"
@@ -19,6 +30,6 @@ task makeDirs(description:'make all dirs for project setup') << {
     }
 }
 
-task wrap(type:Wrapper, description:"create a gradlew") {
-    gradleVersion = '1.5'
+task wrap(type: Wrapper, description: "create a gradlew") {
+    gradleVersion = '1.6'
 }

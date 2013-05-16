@@ -8,7 +8,7 @@ import spock.lang.Shared
  */
 class FixtureSpec extends EmbeddedSpec {
 
-    // フィールドを仕様してフィクスチャを構築できる
+    // フィールドを使用してフィクスチャを構築できる
     // フィーチャメソッドの実行毎に初期化される
     Stack stack = new Stack()
 

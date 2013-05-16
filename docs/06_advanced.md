@@ -141,7 +141,7 @@ class IntegerCategory {
 ### @ConfineMetaClassChanges
 
 `@ConfineMetaClassChanges`を使うと`metaClass`の状態をリストアできる。
-フィーチャメソッドに{@link ConfineMetaClassChanges}を付与すると`setup`メソッドの後の`@code metaClass`状態に`cleanup`メソッドの前でリストアされる。
+フィーチャメソッドに`@ConfineMetaClassChanges`を付与すると`setup`メソッドの後の`@code metaClass`状態に`cleanup`メソッドの前でリストアされる。
 
 ```groovy
 @ConfineMetaClassChanges([String, Integer])

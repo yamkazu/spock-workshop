@@ -1,36 +1,15 @@
 ### Gradle
 
 .gradle
-/build
+build/
 
-### Eclipse.gitignore
+### Eclipse
 
-*.pydevproject
 .project
 .metadata
-bin/**
-tmp/**
-tmp/**/*
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
 .classpath
+bin/
 .settings/
-.loadpath
-
-# External tool builders
-.externalToolBuilders/
-
-# Locally stored "Eclipse launch configurations"
-*.launch
-
-# CDT-specific
-.cproject
-
-# PDT-specific
-.buildpath
 
 ### Intellij
 
@@ -38,5 +17,5 @@ local.properties
 *.ipr
 *.iws
 .idea/
-/out
+out/
 

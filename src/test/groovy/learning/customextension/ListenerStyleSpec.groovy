@@ -13,7 +13,7 @@ import java.lang.annotation.RetentionPolicy
 import java.lang.annotation.Target
 
 /**
- * {@link org.spockframework.runtime.IRunListener}を使ったやり方 
+ * {@link org.spockframework.runtime.IRunListener}を使ったやり方
  */
 @StopWatch
 class ListenerStyleSpec extends Specification {

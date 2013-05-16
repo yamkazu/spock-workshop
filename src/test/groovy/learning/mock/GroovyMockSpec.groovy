@@ -35,7 +35,7 @@ class GroovyMockSpec extends EmbeddedSpec {
 
         then:
         2 * globalSpy.name
-        
+
         and:
         name1 == "Graeme"
         name2 == "Burt"

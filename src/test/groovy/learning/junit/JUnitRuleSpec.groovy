@@ -22,7 +22,7 @@ class JUnitRuleSpec extends Specification {
     MyMethodRule myMethodRule1 // デフォルトコンストラクタで自動的にnewされる
     @Rule
     MyMethodRule myMethodRule2 = new MyMethodRule("MyMethodRule2") // 明示的にコンストラクタを指定して生成
-    
+
     @ClassRule
     @Shared // @ClassRuleはstatic or @Sharedのフィールドのみに適用可能
     MyClassRule myClassRule1

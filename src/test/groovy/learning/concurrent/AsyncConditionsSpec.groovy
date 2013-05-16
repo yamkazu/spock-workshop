@@ -26,7 +26,7 @@ class AsyncConditionsSpec extends Specification {
         }
 
         then: "evaluateが1回実行されるのを待ち合わせ"
-        conditions.await() // デフォルトでタイムアウトは1秒 
+        conditions.await() // デフォルトでタイムアウトは1秒
     }
 
     @FailsWith(SpockTimeoutError)

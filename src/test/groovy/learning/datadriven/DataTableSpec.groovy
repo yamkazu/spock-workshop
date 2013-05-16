@@ -47,11 +47,11 @@ class DataTableSpec extends EmbeddedSpec {
         when:
         compiler.compileSpecBody """
         | def instanceField
-        | 
+        |
         | def foo() {
         |   expect:
         |   true
-        | 
+        |
         |   where:
         |   x             | y
         |   instanceField | 1

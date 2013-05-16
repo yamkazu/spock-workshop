@@ -16,7 +16,7 @@ class DataVariableAssignmentSpec extends EmbeddedSpec {
         x = 3
         y = Math.random() * 100
         z = x > y ? x : y
-        
+
         // データ変数の代入しかない場合は1回のイテレーション
     }
 

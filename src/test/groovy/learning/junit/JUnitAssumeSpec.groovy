@@ -7,7 +7,8 @@ import static org.hamcrest.CoreMatchers.equalTo
 import static org.junit.Assume.assumeThat
 
 /**
- * {@link org.junit.Assume}を使って前提条件が満たされない場合は実行しない
+ * {@link org.junit.Assume}を使って前提条件が満たされない場合は
+ * フィーチャメソッドを実行しない
  */
 class JUnitAssumeSpec extends Specification {
 

@@ -33,3 +33,8 @@ task makeDirs(description: 'make all dirs for project setup') << {
 task wrap(type: Wrapper, description: "create a gradlew") {
     gradleVersion = '1.6'
 }
+
+task console(dependsOn: 'classes', type: JavaExec) {
+    main = 'groovy.ui.Console'
+    classpath = sourceSets.test.runtimeClasspath
+}

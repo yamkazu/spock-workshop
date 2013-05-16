@@ -47,7 +47,7 @@ class GroovyMockSpec extends EmbeddedSpec {
         globalSpy.name >> "mock"
 
         expect:
-        new Person().name != "mock"
+        new Person().name == "mock"
     }
 
     def "コンストラクタのモッキング"() {

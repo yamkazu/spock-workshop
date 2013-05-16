@@ -1,30 +1,4 @@
 
-わたしは
---------
-
-* Kazuki YAMAMOTO
-* [@yamkazu](https://twitter.com/yamkazu)
-* [Yamkazu's Blog](http://yamkazu.hatenablog.com/)
-
-おしながき
-----------
-
-* Spockとは
-* Spockの基礎
-* データ駆動テスト
-* モックサポート
-* 拡張機能
-* 高度な話題
-
-はじめに
---------
-
-* 資料は[こちら](https://github.com/yamkazu/spock-workshop)
-* 文字見えますか
-* ハッシュタグは `#jggug`
-* いつでも質問受付ます
-* 早かったら言ってください
-
 Spockとは
 =========
 

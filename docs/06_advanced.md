@@ -53,7 +53,7 @@ def "that、expectを記述せずに使用することもできる"() {
 ### Ruleを使う
 
 Spockの独自機能で明示的に`new`しなくともデフォルトコンストラクタでインスタンスが生成される。
-コンストラクタの引数が必要な場合は、明示的に{@code new}する必要がある。
+コンストラクタの引数が必要な場合は、明示的に`new`する必要がある。
 
 ```groovy
 @Rule
@@ -141,7 +141,7 @@ class IntegerCategory {
 ### @ConfineMetaClassChanges
 
 `@ConfineMetaClassChanges`を使うと`metaClass`の状態をリストアできる。
-フィーチャメソッドに`@ConfineMetaClassChanges`を付与すると`setup`メソッドの後の`@code metaClass`状態に`cleanup`メソッドの前でリストアされる。
+フィーチャメソッドに`@ConfineMetaClassChanges`を付与すると`setup`メソッドの後の`metaClass`状態に`cleanup`メソッドの前でリストアされる。
 
 ```groovy
 @ConfineMetaClassChanges([String, Integer])

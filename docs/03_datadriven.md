@@ -267,9 +267,6 @@ def "データベースから読み込む"() {
     expect:
     Math.max(x, y) == z
 
-    cleanup:
-    sql.close()
-
     where:
     // []を使用するとGroovyのマルチ代入ライクに複数のデータ変数へ接続できる
     [x, y, z] << sql.rows("SELECT a, b, c FROM maxdata")

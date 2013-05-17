@@ -43,7 +43,6 @@ class SpySpec extends EmbeddedSpec {
         name == "Burt"
     }
 
-//
     def "callRealMethodを使ってスタビングしつつ本物オブジェクトを呼び出す"() {
         setup:
         def person = Spy(Person)

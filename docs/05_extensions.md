@@ -108,6 +108,7 @@ def "reasonに理由を書ける"() {
 スペッククラスに付与することもできる。
 
 ```groovy
+@FailsWith(NullPointerException)
 class FailWithOnSpec extends Specification {
 
     def "ぬるぽで終了する"() {
